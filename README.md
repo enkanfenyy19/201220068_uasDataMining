@@ -27,9 +27,4 @@ Classifier webapp dibangun dengan menggunakan Streamlit (Python-framework). Tuju
 
 ## References
 * For Dataset [Kaggle](https://www.kaggle.com/uciml/pima-indians-diabetes-database)
-* For UI [Streamlit](https://streamlit.io/)
-
-
-## Koreksi 
-* Error (index)
-Di file app.py hapus baris #18 
+* For UI [Streamlit](https://streamlit.io/) 
