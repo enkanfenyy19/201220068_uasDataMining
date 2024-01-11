@@ -2,7 +2,16 @@ import pickle
 import streamlit as st
 
 #Membaca model
-breastcancer_model = pickle.load(open('breastcancer_model.sav', 'rb'))
+import pickle
+
+try:
+    with open('breastcancer_model.sav', 'rb') as model_file:
+        breastcancer_model = pickle.load(model_file)
+    print("Model berhasil dimuat.")
+except FileNotFoundError:
+    print("File 'breastcancer_model.sav' tidak ditemukan.")
+except Exception as e:
+    print(f"Terjadi kesalahan saat memuat model: {e}")
 
 #Judul web
 st.title('Aplikasi Kanker Payudara')
